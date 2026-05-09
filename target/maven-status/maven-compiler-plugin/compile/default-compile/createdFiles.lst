@@ -1,0 +1,6 @@
+com/akunerio/webapptest/controllers/AuthController.class
+models/Product.class
+com/akunerio/webapptest/JakartaRestConfiguration.class
+com/akunerio/webapptest/controllers/ProductsController.class
+com/akunerio/webapptest/resources/JakartaEE11Resource.class
+com/akunerio/webapptest/controllers/HomeController.class
