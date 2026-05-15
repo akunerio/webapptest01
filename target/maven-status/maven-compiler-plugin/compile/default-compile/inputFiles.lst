@@ -1,6 +1,8 @@
 /Users/luliou/NetBeansProjects/webapptest/src/main/java/com/akunerio/webapptest/JakartaRestConfiguration.java
 /Users/luliou/NetBeansProjects/webapptest/src/main/java/com/akunerio/webapptest/controllers/AuthController.java
 /Users/luliou/NetBeansProjects/webapptest/src/main/java/com/akunerio/webapptest/controllers/HomeController.java
+/Users/luliou/NetBeansProjects/webapptest/src/main/java/com/akunerio/webapptest/controllers/JDBC.java
 /Users/luliou/NetBeansProjects/webapptest/src/main/java/com/akunerio/webapptest/controllers/ProductsController.java
+/Users/luliou/NetBeansProjects/webapptest/src/main/java/com/akunerio/webapptest/controllers/TestServlet.java
 /Users/luliou/NetBeansProjects/webapptest/src/main/java/com/akunerio/webapptest/resources/JakartaEE11Resource.java
 /Users/luliou/NetBeansProjects/webapptest/src/main/java/models/Product.java
