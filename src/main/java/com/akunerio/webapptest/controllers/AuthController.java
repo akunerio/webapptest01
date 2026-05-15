@@ -23,7 +23,9 @@ public class AuthController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       request.getRequestDispatcher("form_login.jsp").forward(request, response);
+        if(request.getParameter("logout") != null)
+            request.getSession().invalidate();
+        request.getRequestDispatcher("form_login.jsp").forward(request, response);
     }
 
  
@@ -35,6 +37,7 @@ public class AuthController extends HttpServlet {
             String password = request.getParameter("pass");
             
             if ("admin".equals(username) && "admin123".equals(password)) {
+                request.getSession().setAttribute("username", username);
                 response.sendRedirect("home");
                 return;
             }

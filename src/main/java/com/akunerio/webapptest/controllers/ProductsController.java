@@ -29,6 +29,11 @@ public class ProductsController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+        if(request.getSession().getAttribute("username") == null) {
+            response.sendRedirect("auth");
+            return;
+        }
+        
         String menu = request.getParameter("action");
         
         if (menu == null) { //view menu

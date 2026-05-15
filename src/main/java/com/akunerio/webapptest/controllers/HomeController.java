@@ -23,6 +23,10 @@ public class HomeController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
             
+        if(request.getSession().getAttribute("username") == null) {
+            response.sendRedirect("auth");
+            return;
+        }
             String keyword = request.getParameter("key");
             request.setAttribute("katakunci", keyword);
             request.getRequestDispatcher("form_search.jsp").forward(request, response);

@@ -6,7 +6,7 @@
         <title>Search Page</title>
     </head>
     <body>
-        <h1>Hello, user</h1>
+        <h1>Hello, ${sessionScope.username}</h1>
         <a href="auth?logout"><button>Logout</button></a>
         <br /><br />
         <form method="get" action="home">
